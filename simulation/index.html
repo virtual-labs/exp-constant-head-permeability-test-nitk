@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SOLVE</title>
+<link rel="stylesheet" href="css/const.css" />
+</head>
+<!-- Determination of Coefficient of Permeability of soils by Constant Head Permeability test -->
+<body>
+<div class="simscreen">
+<div class="title"><h3>Constant Head Permeability test</h3></div>
+
+<div class="simsubscreen canvas0" >
+	<h4 class="incanvas ">Objective:</h4>
+	<p class="incanvas lineHeight">To determine coefficient of permeability of given soil sample by constant head permeability test.</p><br/>
+	<h4 class="incanvas">Apparatus used:</h4>
+	<p class="incanvas lineHeight">Permeameter, Filter paper, Porous stones, Water tank, Timer, Beakers, Graduated measuring cylinder, Connecting water pipes.</p>
+	 <img class="human" title = "" src="images/human.png" />
+	<img class="full-setup" title = "Permeameter setup" src="images/fullSetup.png" />
+
+	<span class="tooltip description-tooltip">
+		<strong class="tooltip-heading">Description</strong>
+		<span class="tooltiptext description-tooltiptext"><strong>Permeability</strong> is the property of soil which allows the water to percolate through its continuously connected voids.</br>
+		<strong>Coefficient of permeability</strong> is equal to the rate of flow of water through unit cross sectional area under unit hydraulic gradient.
+	</span>
+	</span>
+</div>
+
+<div class="simsubscreen canvas1 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;1&nbsp;</span>
+	<p class="steptext">&nbsp; Measure the inner diameter and height of the mould, then calculate the volume of the mould.<p>
+	<table class="area-vol-table">
+		<tr class="area-table">
+			<td>Area of mould, A </td>
+			<td>
+				 = &nbsp;&nbsp; &pi; &times; <span class="frac"><sup>d<sup>2</sup></sup><span>&frasl;</span><sub>4</sub></span>&nbsp;&nbsp;
+			 =</td>
+			<td><input class="area" /></td>
+			<td>cm<sup>2</sup></td>
+			<td><span class="mark1"></span></td>
+			<td><button class="btn check1" >Check</button></td>
+			<td><button class="btn result1">Result</button></td>
+		</tr>
+		<tr class="vol-table">
+			<td>Volume of mould, V </td>
+			<td>= &nbsp;&nbsp; A &times; L  &nbsp;&nbsp;&nbsp; =</td>
+			<td><input class="vol" /></td>
+			<td>cm<sup>3</sup></td>
+			<td><span class="mark2"></span></td>
+			<td><button class="btn check2" >Check</button></td>
+			<td><button class="btn result2">Result</button></td>
+		</tr>
+	</table>
+	<img class="mould1-1" alt="Mould" title="Mould" src="images/mould.png"/>
+	<img class="scale scale1-1" alt="Scale" title="Scale" src="images/scale1.png"/>
+	<p class="data1-1"></p>
+	<p class="data1-2"></p>
+
+</div>
+
+<div class="simsubscreen canvas2 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;2&nbsp;</span>
+	<p class="steptext">&nbsp; Place the sealing gasket and the porous stone inside the groove of the baseplate.<p>
+	<img class="setup2-1" alt="Setup" title="Base plate" src="images/setup1.png" />
+
+	<img class="setup2-5" alt="stand" title="Porous Stone" src="images/porous_stone.png" />
+	<img class="setup2-6" alt="stand" src="images/porous_stone_with_hand.png" />
+
+	<img class="setup2-2" alt="Setup" title="Sealing Gasket with Hand" src="images/sealing_gasket_with_hand.png" />
+	<div class="setup2-3" title="Sealing Gasket"></div>
+	<img class="setup2-4" alt="stand" src="images/stand.png" />
+</div>
+
+<div class="simsubscreen canvas3 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;3&nbsp;</span>
+	<p class="steptext">&nbsp; Fix the mould on the base plate. Using the nut and bolt mechanism completely fasten the bolts to make the permeameter completely leak proof and then place a filter paper inside the mould.<p>
+	<img class="setup3-1" alt="Setup" title="Base plate" src="images/setup1.png" />
+	<img class="setup3-3" alt="stand" title="Porous Stone" src="images/porous_stone.png" />
+	<div class="setup3-2" title="Sealing Gasket"></div>
+	<img class="setup3-5" alt="Mould" src="images/full_mould.png" />
+	<img class="setup3-7" alt="Mould with hand" src="images/mould_with_hand.png" />
+	<img class="setup3-12" alt="Filter Paper Box" src="images/filterpaperbox.png" />
+	<img class="setup3-13" alt="Filter Paper" src="images/filter_paper_with_hand.png" />
+	<img class="setup3-4right" alt="stand" src="images/stand.png" />
+	<img class="setup3-4left" alt="stand" src="images/stand2.png" />
+	<img class="setup3-6" alt="Mould" src="images/half_mould.png" />
+	<img class="setup3-8" alt="nut" src="images/nut.png" />
+	<img class="setup3-9" alt="nut" src="images/screw_driver.png" />
+	<img class="setup3-10" alt="nut" src="images/nut_head.png" />
+	<img class="setup3-11" alt="nut" src="images/nut_head.png" />
+</div>
+
+<div class="simsubscreen canvas4 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;4&nbsp;</span>
+	<p class="steptext">&nbsp; Pour the soil sample into the mould in 3 layers with 5 blows to each layer.<p>
+	<img class="setup4-1" alt="Setup" title="Base plate" src="images/setup1.png" />
+	<img class="setup4-2" alt="Mould" src="images/full_mould.png" />
+	<div class="setup4-14"></div>
+	<img class="setup4-3right" alt="stand" src="images/stand.png" />
+	<img class="setup4-3left" alt="stand" src="images/stand2.png" />
+	<img class="setup4-4" alt="Mould" src="images/half_mould.png" />
+	<img class="setup4-5" alt="nut" src="images/nut_head.png" />
+	<img class="setup4-6" alt="nut" src="images/nut_head.png" />
+
+	<img class="setup4-10" alt="soil" src="images/ws3.png" />
+	<img class="setup4-9" alt="soil" src="images/ws2.png" />
+	<img class="setup4-8" alt="soil" src="images/ws.png" />
+	<img class="setup4-7" alt="plate" src="images/plate.png" />
+	<img class="setup4-11" alt="plate" src="images/trowel.png" />
+	<img class="setup4-12" alt="plate" src="images/trowels.png" />
+	<img class="setup4-13" alt="plate" src="images/tamping_rod.png" />
+
+	<img class="setup4-2b" alt="Mould" src="images/mould_tamp.png" />
+</div>
+
+<div class="simsubscreen canvas5 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;5&nbsp;</span>
+	<p class="steptext">&nbsp; Place a filter paper on top of the soil and then place a porous stone on top of it.<p>
+	<img class="setup5-1" alt="Setup" title="Base plate" src="images/setup1.png" />
+	<img class="setup5-2" alt="Mould" src="images/full_mould.png" />
+	<div class="setup5-7"></div>
+
+	<img class="setup5-10" alt="stand" title="Porous Stone" src="images/porous_stone.png" />
+	<img class="setup5-11" alt="stand" src="images/porous_stone_with_hand.png" />
+
+	<img class="setup5-8" alt="Filter Paper Box" src="images/filterpaperbox.png" />
+	<img class="setup5-9" alt="Filter Paper" src="images/filter_paper_with_hand.png" />
+
+	<img class="setup5-3right" alt="stand" src="images/stand.png" />
+	<img class="setup5-3left" alt="stand" src="images/stand2.png" />
+	<img class="setup5-4" alt="Mould" src="images/half_mould.png" />
+	<img class="setup5-5" alt="nut" src="images/nut_head.png" />
+	<img class="setup5-6" alt="nut" src="images/nut_head.png" />
+</div>
+
+<div class="simsubscreen canvas6 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;6&nbsp;</span>
+	<p class="steptext">&nbsp; Insert the sealing gasket into the top plate and place it above the mould. Then using the nut and screw mechanism completely fasten the bolts to make the permeameter completely leak proof.<p>
+	<img class="setup6-11" alt="nut" src="images/behind.png" />
+
+	<img class="setup6-1" alt="Setup" title="Base plate" src="images/setup1.png" />
+	<img class="setup6-2" alt="Mould" src="images/full_mould.png" />
+	<img class="setup6-7" alt="stand" title="Porous Stone" src="images/porous_stone.png" />
+
+	<img class="setup6-8" alt="stand" title="Top Plate" src="images/top_plate.png" />
+
+	<img class="setup6-3right" alt="stand" src="images/stand.png" />
+	<img class="setup6-13" alt="stand" src="images/screw_driver.png" />
+	<img class="setup6-3left" alt="stand" src="images/stand2.png" />
+	<img class="setup6-4" alt="Mould" src="images/half_mould.png" />
+	<img class="setup6-5" alt="nut" src="images/nut_head.png" />
+	<img class="setup6-6" alt="nut" src="images/nut_head.png" />
+	<img class="setup6-9" alt="nut" src="images/left.png" />
+	<img class="setup6-10" alt="nut" src="images/right.png" />
+
+	<img class="setup6-12" alt="nut" src="images/bolt.png" />
+	<img class="setup6-14" alt="nut" src="images/bolt2.png" />
+	<img class="setup6-15" alt="nut" src="images/bolt2.png" />
+	<img class="setup6-16" alt="nut" src="images/bolt2.png" />
+</div>
+
+<div class="simsubscreen canvas7 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;7&nbsp;</span>
+	<p class="steptext">&nbsp; Now connect the water pipe from the overhead tank to the bottom outlet pipe of the permeameter and also open the air release valve.</p>
+	<img class="setup7-1" alt="Overhead tank" title="Overhead tank" src="images/over_head_tank.png"/>
+	<img class="setup7-2" alt="Overhead tank" title="Zoomed view of Permeameter" src="images/permeameter.png"/>
+	<img class="setup7-3" alt="Overhead tank" title="" src="images/outer-pipe.png"/>
+	<img class="setup7-4" alt="Overhead tank" title="Hand" src="images/hand.png"/>
+	<div class="setup7-5"></div>
+	<div class="setup7-6"></div>
+</div>
+
+<div class="simsubscreen canvas8 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;8&nbsp;</span>
+	<p class="steptext">&nbsp;  Allow the water to fill inside the permeameter and all the air voids also will get escaped through the air release valve. Once water starts to flow through the air release valve, stop the water supply and close the air release valve.</p>
+	<img class="setup8-6" alt="water" title="" src="images/water.png"/>
+	<img class="setup8-1" alt="Overhead tank" title="Overhead tank" src="images/over_head_tank.png"/>
+	<img class="setup8-2" alt="Permeameter" title="Permeameter" src="images/permeameter.png"/>
+	<img class="setup8-7" alt="" title="" src="images/water2.png"/>
+	<img class="setup8-3" alt="Pipe connected to outer inlet valve" title="Pipe connected to outer inlet valve" src="images/outer-pipe.png"/>
+	<div class="setup8-4"></div>
+	<img class="setup8-5 setup8-5a" alt="" title="" src="images/valve.png"/>
+	<img class="setup8-5 setup8-5b" alt="" title="" src="images/valve.png"/>
+	<img class="setup8-8" alt="" title="" src="images/water3.png"/>
+	<div class="setup8-9"></div>
+</div>
+
+<div class="simsubscreen canvas9 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;9&nbsp;</span>
+	<p class="steptext">&nbsp; Now connect the water pipe to the inlet pipe of the permeameter and allow the flow of water maintaining a constant head of water in the overhead tank.</p>
+	<img class="setup9-3" alt="water" title="" src="images/water.png"/>
+	<img class="setup9-1" alt="Overhead tank" title="Overhead tank" src="images/over_head_tank.png"/>
+	<img class="setup9-2" alt="Permeameter" title="Permeameter" src="images/permeameter.png"/>
+	<img class="setup9-4 setup9-4a" alt="Inner pipe" title="" src="images/inner_pipe.png"/>
+	<img class="setup9-4 setup9-4b" alt="Inner pipe with water" title="" src="images/inner_pipe_with_water.png"/>
+	<img class="setup9-5" alt="" title="" src="images/valve.png"/>
+	<img class="setup9-6" alt="" title="" src="images/const_head.png"/>
+</div>
+
+<div class="simsubscreen canvas10 hidden">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;10&nbsp;</span>
+	<p class="steptext">&nbsp; Collect the water with a measuring jar for a fixed time interval and note down the value. Repeat the same process for different time intervals.</p>
+	<img class="setup10-3" alt="water" title="" src="images/water.png"/>
+	<img class="setup10-1" alt="Overhead tank" title="Overhead tank" src="images/over_head_tank.png"/>
+	<img class="setup10-2" alt="Permeameter" title="Permeameter" src="images/permeameter.png"/>
+	<img class="setup10-4" alt="Inner pipe with water" title="" src="images/inner_pipe_with_water.png"/>
+	<div class="drop10 drop10-1"></div>
+	<div class="drop10 drop10-2"></div>
+	<div class="setup10-6"></div>
+	<img class="setup10-5" alt="Measuring Jar" title="Measuring Jar" src="images/beaker.png"/>
+	<img class="setup10-7" alt="Clock" title="" src="images/clock.png"/>
+	<img class="setup10-8" alt="Needle" title="" src="images/needle.png"/>
+
+	<table class="table10">
+		<thead>
+			<tr>
+				<th>Trial No.</th>
+				<th>Time, t (sec)</th>
+				<th title="Volume of water collected in measuring jar">Volume of water, Q (cm<sup>3</sup>)</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+<div class="simsubscreen canvas11 hidden">
+	<h3>Observations: </h3>
+	<table class="table11-1">
+		<thead>
+			<tr>
+				<th>Trial No.</th>
+				<th>Time, t (sec)</th>
+				<th title="collected in measuring jar">Volume of water (cm<sup>3</sup>)</th>
+			</tr>
+		</thead>
+	</table>
+	<!-- <p class="const">Constant head, h = 67.5cm</p> -->
+	<div class="calculation"></br>
+		<h3>Calculations: </h3>
+		<table class="table11-2">
+			<tr class="avg-tab">
+				<td>Average of volume of water, Q =</td>
+				<td><input class="avg" /></td>
+				<td>cm<sup>3</sup></td>
+				<td><span class="mark3"></span></td>
+				<td><button class="btn check3" >Check</button></td>
+				<td><button class="btn result3">Result</button></td>
+			</tr>
+			<tr class="coefficient-tab">
+				<td>Coefficient of permeability of <br>given soil sample, (K<sub>t</sub>) = <span class="frac"><sup>Q &times; L</sup><span>&frasl;</span><sub>A &times; t &times; h</sub></span> =</td>
+				<td><input class="coeff" /></td>
+				<td>&times; 10<sup>-4</sup>cm/s</td>
+				<td><span class="mark4"></span></td>
+				<td><button class="btn check4" >Check</button></td>
+				<td><button class="btn result4">Result</button></td>
+			</tr>
+		</table>
+	</div>
+	<div class="inference">
+		<h3>Inference:</h3>
+		<p>As the value of coefficient of permeability lies between 10<sup>-3</sup> to 10<sup>-4</sup> the soil can be classified as silty sand.</p>
+	</div>
+</div>
+
+<div class="note">
+	<p class="note-text"></p>
+	<button class="note-btn">OK</button>
+</div>
+	<span class="tooltip variables hidden">
+		<strong class="variables-heading">Variables used in calculation</strong>
+		<span class="variables-description"></span>
+	</span>
+
+	<div class="formativeQuestDiv">
+		<p class="q"></p>
+		<select class="answer"></select>
+		<p class="a"></p>
+	</div>
+
+	<div id="nav">
+		<img class="nextButton" onclick="navNext()" title="Next Button" src="images/Next.png" />
+	</div>
+
+	<img id="arrow1" src="images/arrow1.png"/>
+
+	<div class="copyright"> &copy; 2020 - <script>document.write(new Date().getFullYear())</script>
+	SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+</div>
+
+<script defer language="JavaScript" type="text/javascript" src="js/jquerymin.js"></script>
+<script defer type="text/javascript" src="js/const.js"></script>
+<script src="../assets/js/iframeResize.js"></script></body>
+</html>
