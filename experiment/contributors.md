@@ -4,7 +4,7 @@
 | :--: | :-- | :-------: |
 |  1   | Dr. Pruthviraj U | NITK |
 
-### Lab Developers:
+### Lab Developer:
 
 | SNo. | Name | Institute |
 | :--: | :-- | :-------: |

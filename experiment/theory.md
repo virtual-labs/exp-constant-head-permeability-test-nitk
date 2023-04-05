@@ -26,7 +26,7 @@
 
 <img src="https://latex.codecogs.com/svg.image?\small&space;\mathrm{&space;k&space;=&space;\frac{q}{iA}}" title="https://latex.codecogs.com/svg.image?\small \mathrm{ k = \frac{q}{iA}}" />
 
-</center>
+</center></br>
 
 <p style="text-align: justify; text-indent:50px;">The major factors on which permeability depends are the grain size of the soil particles, the properties of the pore fluid, the void ratio of soil, the shapes and arrangement of pores and the degree of saturation.</p>
 
