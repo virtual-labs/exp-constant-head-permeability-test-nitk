@@ -1,13 +1,13 @@
 #### The following procedure steps will be followed on the simulator
 
-1.	Click on the simulation button and following page will be displayed. Hover over the description button to get a brief explanation about the experiment. Then click on ""Next Button"" to proceed.</br>
+1.	Click on the simulation button and following page will be displayed. Hover over the description button to get a brief explanation about the experiment. Then click on "Next Button" to proceed.</br>
 <img src="images/1.png" /></br>
 
-2. Click on the scale to measure the diameter and height of the mould. Then determine the area and volume of the mould and click on the ""Next Button"".</br>
+2. Click on the scale to measure the diameter and height of the mould. Then determine the area and volume of the mould and click on the "Next Button".</br>
 <img src="images/3.png" /></br></br>
 <img src="images/5.png" /></br>
 
-3. Click on the sealing gasket and the porous stone to place it inside the base plate and click on the "Next Button"..</br>
+3. Click on the sealing gasket and the porous stone to place it inside the base plate and click on the "Next Button".</br>
 <img src="images/7.png" /></br></br>
 <img src="images/8.png" /></br>
 
