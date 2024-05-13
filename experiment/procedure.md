@@ -21,10 +21,10 @@
 <img src="images/15.png" /></br>
 
 7. Click on the filter paper and the porous stone to place it above the permeameter and click on the "Next Button".</br>
-<img src="images/13.png" /></br>
+<img src="images/14.png" /></br>
 
 8. Click on the top plate and tighten the screws.</br>
-<img src="images/18.png" /></br>
+<img src="images/17.png" /></br>
 
 9. Answer the formative questions to move forward in the simulation and click on the "Next Button".</br>
 <img src="images/25.png" /></br>
