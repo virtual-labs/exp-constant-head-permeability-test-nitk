@@ -1,0 +1,1350 @@
+/*mathstyle.css*/  
+span.frac {
+display: inline-block;
+text-align: center;
+vertical-align: middle;
+}
+span.frac > sup, span.frac > sub {
+display: block;
+font: inherit;
+padding: 0 0.3em;
+}
+span.frac > sup {border-bottom: 0.08em solid;}
+span.frac > span {display: none;}
+    
+*{
+	margin:0;
+	padding:0;	
+}
+
+body{
+	font-family:verdana;
+}	
+
+/* ----------------------------------- General styles -------------------------------------- */
+.simscreen
+{
+	position: relative;
+	left:0px;
+	top:0px;
+	height: 600px; 
+	width:800px;
+	border:solid 1px;
+}
+
+.title{
+	position:relative;
+	left: 0px;
+	top: 0px;
+	height:40px;
+	font-size: 24px;
+	text-align:center;
+	background-color: black;
+	font-family: verdana;
+	color: White;
+	text-transform: uppercase; 
+}
+
+.title h3
+{
+	padding-top:2px;
+	margin:0px;
+}	
+
+.simsubscreen
+{
+	position:absolute;
+	left:50px;
+	top:50px;
+	height:530px;
+	width:745px;
+}
+
+.incanvas
+{
+	margin:5px 0 0 5px;
+	padding:0;
+	font-size:14px;
+}
+
+.nextButton
+{
+	position:absolute;
+	left:750px;
+	top:530px;
+	cursor:pointer;
+}
+
+.circlebg
+{
+	border-radius:100%;
+	font-size:25px;
+	color:#fff;
+	text-align:center;
+	background:#000
+}
+
+.steptext
+{
+	display:inline;
+	font-size:14px;
+}
+
+.copyright{
+	position: absolute;
+	left:50px;
+	top: 580px;
+	font-size:12px
+}
+
+/* Description popup */
+.popup
+{
+	border-radius:5px;
+	background-color:black;
+	color:white;
+	padding:5px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor:pointer;
+  /* visibility:hidden; */
+}
+
+.tooltip .tooltiptext {
+  left:102px;
+  visibility: hidden;
+  width: 550px;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 100;
+  line-height:1.5;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.description-tooltip
+{
+	border-bottom:1px dotted; 
+	color:red; 
+	position:absolute;
+	top:166px; 
+	left:5px;
+}
+
+.description-tooltiptext{
+	font-size:14px; 
+	text-align:justify;
+}
+
+.description-tooltiptext strong{
+	color:red;
+}
+
+.formativeQuestDiv
+{
+	position:absolute; 
+	font-size:14px; 
+	background-color:grey; 
+	line-height:1.5;
+	color:white; 
+	padding:7.5px; 
+	border-radius:5px; 
+	visibility:hidden;
+}
+
+.formativeQuestDiv .q,  .formativeQuestDiv .answer{
+	margin-bottom:5px;
+}
+
+#arrow1{
+	visibility:hidden;
+}
+
+.visible{
+	visibility:visible;
+}
+
+.hidden{
+	visibility:hidden;
+}
+
+.lineHeight{
+	line-height:1.75;
+}
+
+/* -----------------------------Simulation---------------------------------- */
+
+
+/* ----------------------------------------- CANVAS 0 ------------------------------------------- */
+.human{
+	position:absolute; 
+	left: 180px;
+	top: 227px;
+	height: 200px;
+}
+
+.full-setup{
+	position:absolute; 
+	left: 320px;
+	top: 170px;
+	width: 14%;
+}
+
+/* -----------------------------Canvas 1 -------------------------------------*/
+.mould1-1 {
+	position:absolute; 
+	left:275px; 
+	top:305px;
+}
+
+.scale1-1 {
+	position:absolute;
+	left: 170px;
+	top: 300px;
+	height:150px;
+	cursor:pointer;
+}
+
+.scale1-1Rotate{
+	position:absolute;
+	left: 294px;
+	top: 165px;
+	height:150px;
+	transform:rotate(90deg);
+	cursor:pointer;
+}
+
+@webkit-keyframes measureMouldHeight {
+	from { left: 170px; top: 300px;}
+	to {left: 258px; top: 300px;}
+}
+
+@keyframes measureMouldHeight {
+	from { left: 170px; top: 300px;}
+	to {left: 258px; top: 300px;}
+}
+
+@webkit-keyframes measureMouldDia {
+	from { 	left: 294px; top: 165px;}
+	to {left: 294px; top: 222px;}
+}
+
+@keyframes measureMouldDia {
+	from { 	left: 294px; top: 165px;}
+	to {left: 294px; top: 222px;}
+}
+
+.data1-1{
+	position:absolute;
+	left:100px;
+	top:90px;
+	font-size:14px;
+}
+
+
+.data1-2{
+	position:absolute;
+	left:100px;
+	top:140px;
+	font-size:14px;
+}
+
+.area-vol-table{
+	position: absolute;
+	top: 170px;
+    left: 91px;
+    font-size: 14px;
+	
+}
+
+.area-table{
+	visibility:hidden;
+}
+
+.vol-table{
+	visibility:hidden;	
+}
+
+.area-vol-table td{
+	padding:7px;
+	border:none;
+}
+
+.area-vol-table td:nth-child(3){
+	padding-right:0;
+}
+
+.area-vol-table td:nth-child(4)
+{
+	padding-left:2px;
+}
+
+input {
+	border:none;
+	border-bottom:2px solid #000;
+	width:60px;
+	outline:none;
+}
+
+.right-mark{
+	color:green;
+	font-weight:bold;
+	font-size:16px;
+}
+
+.wrong-mark{
+	color:red;
+	font-weight:bold;
+	font-size:16px;
+}
+
+.btn{
+	text-transform:uppercase;
+	padding:2px;
+	font-size: 12px;
+	cursor:pointer;
+}
+
+/* ------------------------------------------- Canvas 2 ------------------------------------------------------------- */
+.setup2-1{
+	width: 275px;
+    /* height: 300px; */
+    position: absolute;
+    left: 350px;
+    top: 200px;
+}
+
+.setup2-2{
+	width: 135px;
+    position: absolute;
+    left: 62px;
+    top: 325px;
+	visibility:hidden;
+}
+
+/* left: 410px; */
+    /* top: 75px; */
+	/* top: 230px; */
+/* } */
+
+.setup2-3{
+	width: 75px;
+    height: 33px;
+	border:6px solid #3E3E3E;
+	border-radius:100px/50px;
+	position: absolute;
+    left: 100px;
+    top:410px;
+	cursor:pointer;
+}
+
+.setup2-4 {
+  position: absolute;
+  left: 524px;
+  top: 213px;
+}
+
+.setup2-5, .setup5-10 {
+	position: absolute;
+	left: 100px;
+	top: 410px;
+	width: 76px;
+	height: 41px;
+	visibility:hidden;
+	cursor:pointer;
+}
+
+.setup2-6, .setup5-11 {
+	width: 135px;
+    position: absolute;
+    left: 62px;
+    top: 325px;
+	visibility:hidden;
+}
+	
+@webkit-keyframes placeSealingGasket {
+	0% { left: 62px; top: 325px;}
+	25% { left: 62px; top: 75px;}
+	50% { left: 410px; top: 75px;}
+	100% {left: 410px; top: 230px;}
+}
+
+@keyframes placeSealingGasket {
+	0% { left: 62px; top: 325px;}
+	25% { left: 62px; top: 75px;}
+	50% { left: 410px; top: 75px;}
+	100% {left: 410px; top: 230px;}
+}
+
+/* -------------------------------------------------------------- Canvas 3 ---------------------------------------------------------- */
+.setup3-1{
+	width: 275px;
+    /* height: 300px; */
+    position: absolute;
+    left: 350px;
+    top: 265px;
+}
+
+.setup3-2{
+	width: 75px;
+    height: 33px;
+	border:6px solid #3E3E3E;
+	border-radius:100px/50px;
+	position:absolute;
+	left: 454px; 
+	top: 387px;
+}
+
+.setup3-4right {
+  position: absolute;
+  left: 524px;
+  top: 278px;
+}
+
+.setup3-4left {
+	position: absolute;
+    left: 443px;
+    top: 269px;
+    width: 9px;
+    height: 143px;
+}
+
+.setup3-3 {
+  position: absolute;
+  left: 460px; 
+  top: 393px;
+  width: 76px;
+  height: 41px;
+}
+
+.setup3-5 {
+  position: absolute;
+  /* left: 439px; */
+  /* top: 238px; */
+  left: 74px;
+  top: 391px;
+  width: 116px;
+  height: 139px;
+}
+
+.setup3-6 {
+    position: absolute;
+    width: 95px;
+    height: 43px;
+	left: 438px;
+    top: 247px;
+	visibility:hidden;
+}
+
+.setup3-7 {
+	position: absolute;
+    left: 67px;
+    top: 294px;
+	visibility:hidden;
+}
+
+.setup3-8 {
+    width: 1.8%;
+    height: 5%;
+    position: absolute;
+    left: 540px;
+	top: 216px;
+	visibility:hidden;
+}
+
+.setup3-9 {
+    width: 20%;
+    position: absolute;
+    left: 540px;
+    top: 315px;
+	visibility:hidden;
+}
+
+.setup3-10 {
+    width: 2%;
+    height: 2%;
+    position: absolute;
+    left: 537px;
+    top: 400px;
+	visibility:hidden;
+}
+
+.setup3-11 {
+    width: 2%;
+    height: 2%;
+    position: absolute;
+    left: 463px;
+    top: 422px;
+	visibility:hidden;
+}
+
+.setup3-12, .setup5-8 {
+  position: absolute;
+  left: 100px;
+  top: 455px;
+  width: 15%;
+  visibility:hidden;
+}
+
+.setup3-13, .setup5-9 {
+	position: absolute;
+	left: 119px;
+	top: 410px;
+	visibility:hidden;
+}
+
+@webkit-keyframes placeFullMould_1 {
+	0% {  left: 67px; top: 294px;}
+	/* 47% { left: 67px; top: 54px;} */
+	100% {left: 432px; top: 54px;}
+}
+
+@keyframes placeFullMould_1  {
+	0% {  left: 67px; top: 294px;}
+	/* 47% { left: 67px; top: 54px;} */
+	100% {left: 432px; top: 54px;}
+}
+
+@webkit-keyframes placeFullMould_2 {
+	0% {left: 432px; top: 54px;}
+	100% {left: 432px; top: 206px;}
+}
+
+@keyframes placeFullMould_2  {
+	0% {left: 432px; top: 54px;}
+	100% {left: 432px; top: 206px;}
+}
+
+@webkit-keyframes placeHalfMould {
+	0% {left: 438px; top: 247px;}
+	100% {left: 438px; top: 399px;}
+}
+
+@keyframes placeHalfMould {
+	0% {left: 438px; top: 247px;}
+	100% {left: 438px; top: 399px;}
+}
+
+@webkit-keyframes placeNut {
+	0% {left: 540px; top: 216px;}
+	100% {left: 540px; top: 381px;}
+}
+
+@keyframes placeNut {
+	0% {left: 540px; top: 216px;}
+	100% {left: 540px; top: 381px;}
+}
+
+@webkit-keyframes tightenNut {
+	0% {transform:rotate(-6deg);}
+	100% {transform:rotate(15deg);}
+}
+
+@keyframes tightenNut {
+	0% {transform:rotate(-6deg);}
+	100% {transform:rotate(15deg);}
+}
+
+@webkit-keyframes placeFilterPaper {
+	0% {left: 119px; top: 410px;}
+	80% {left: 460px; top: 190px; }
+	100% {left: 460px; top: 250px;}
+}
+
+@keyframes placeFilterPaper {
+	0% {left: 119px; top: 410px;}
+	80% {left: 460px; top: 190px; }
+	100% {left: 460px; top: 250px;}
+}
+
+/* ---------------------------------------- CANVAS 4 & 5 ------------------------------------------------ */
+
+.setup4-1, .setup5-1, .setup6-1{
+	width: 275px;
+    position: absolute;
+    left: 350px;
+    top: 265px;
+}
+
+.setup4-3right, .setup5-3right, .setup6-3right {
+  position: absolute;
+  left: 524px;
+  top: 278px;
+}
+
+.setup4-3left, .setup5-3left, .setup6-3left {
+	position: absolute;
+    left: 443px;
+    top: 269px;
+    width: 9px;
+    height: 143px;
+}
+
+
+.setup4-2, .setup5-2, .setup6-2 {
+  position: absolute;
+  left:439px; 
+  top:303px;
+  width: 116px;
+  height: 139px;
+}
+
+.setup4-2b {
+	position: absolute;
+	left: 452px;
+    top: 313px;
+}
+
+.setup4-4, .setup5-4, .setup6-4 {
+    position: absolute;
+    width: 95px;
+    height: 43px;
+	left: 438px;
+    top: 247px;
+	visibility:hidden;
+}
+
+.setup4-5, .setup5-5, .setup6-5 {
+    width: 2%;
+    height: 2%;
+    position: absolute;
+    left: 537px;
+    top: 400px;
+}
+
+.setup4-6, .setup5-6, .setup6-6 {
+    width: 2%;
+    height: 2%;
+    position: absolute;
+    left: 463px;
+    top: 422px;
+}
+
+.setup4-7 {
+  position: absolute;
+  left: 45px;
+  top: 445px;
+}
+
+.setup4-8, .setup4-9, .setup4-10  {
+  position: absolute;
+  left: 52px;
+  top: 453px;
+}
+
+.setup4-11 {
+  position: absolute;
+  left: -42px;
+  top: 342px;
+  /* left: 48px; */
+  /* top: 409px; */
+  visibility:hidden;
+}
+
+.setup4-12 {
+  position: absolute;
+  left: 48px;
+  top: 409px;
+  visibility:hidden;
+    /* left: 341px; */
+  /* top: 222px; */
+}
+
+.setup4-13 {
+  position: absolute;
+  left: 470px;
+  top: 42px;
+  visibility:hidden;
+/* top: 90px; */
+
+  /* left: 490px; */
+/* top: 150px; */
+  /* left: 450px; */
+/* top: 150px; */
+  /* left: 470px; */
+/* top: 150px; */
+}
+
+@webkit-keyframes placeTrowel_1 {
+	0% {left: -42px; top: 342px;}
+	100% { left: 48px; top: 409px;}
+}
+
+@keyframes placeTrowel_1 {
+	0% {left: -42px; top: 342px;}
+	100% { left: 48px; top: 409px;}
+}
+
+@webkit-keyframes placeTrowel_2 {
+	0% { left: 48px; top: 409px;}
+	100% {left: 355px; top: 205px;}
+}
+
+@keyframes placeTrowel_2 {
+	0% { left: 48px; top: 409px;}
+	100% {left: 355px; top: 205px;}
+}
+
+@webkit-keyframes pourSoil {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(15deg);}
+}
+
+@keyframes pourSoil {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(15deg);}
+}
+
+@webkit-keyframes tamping {
+	0% {left: 470px; top: 42px;}
+	10% {left: 470px; top: 150px;}
+	20% {left: 450px; top: 90px;}
+	30% {left: 450px; top: 150px;}
+	40% {left: 470px; top: 90px;}
+	50% {left: 470px; top: 150px;}
+	60% { left: 485px; top: 90px;}
+	70% { left: 485px; top: 150px;}
+	80% { left: 465px; top: 90px;}
+	90% { left: 465px; top: 150px;}
+	100% { left: 470px; top: 90px;}
+}
+
+@keyframes tamping {
+	0% {left: 470px; top: 42px;}
+	10% {left: 470px; top: 150px;}
+	20% {left: 450px; top: 90px;}
+	30% {left: 450px; top: 150px;}
+	40% {left: 470px; top: 90px;}
+	50% {left: 470px; top: 150px;}
+	60% { left: 485px; top: 90px;}
+	70% { left: 485px; top: 150px;}
+	80% { left: 465px; top: 90px;}
+	90% { left: 465px; top: 150px;}
+	100% { left: 470px; top: 90px;}
+}
+
+/* ---------------------------------- Canvas 5-------------------------------------- */
+.setup5-7, .setup4-14{
+	background-color:#BB834C;
+	position:absolute;
+	left: 459px;
+	top: 303px;
+	width: 77px;
+	height: 19px;
+	border-radius: 50%;
+}
+
+.setup4-14{
+	visibility:hidden;
+}
+
+.setup5-10 {
+	visibility:hidden;
+}
+
+@webkit-keyframes placePorousStone {
+	0% { left: 62px; top: 325px;}
+	75% { left: 413px; top: 125px;}
+	100% {left: 413px; top: 193px;}
+}
+
+@keyframes placePorousStone {
+	0% { left: 62px; top: 325px;}
+	75% { left: 413px; top: 125px;}
+	100% {left: 413px; top: 193px;}
+}
+
+/* -------------------------------------------- Casnvas 6 ---------------------------------------------- */
+.setup6-7{
+	position: absolute; 
+	left: 459px;
+	top: 303px;
+	height:19px;
+	width: 76px;
+}
+
+.setup6-8{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	left: 108px;
+	top: 440px;
+}
+
+.setup6-9 {
+	width: 16px;
+	height: 17px;
+	position: absolute;
+	left: 440px;
+	top: 241px;
+	/* top: 301px; */
+	visibility:hidden;
+}
+
+.setup6-10 {
+	width: 29px;
+	height: 19px;
+	position: absolute;
+	left: 509px;
+	top: 253px;
+	visibility:hidden;
+}
+
+.setup6-11 {
+	width: 19px;
+	height: 5px;
+	position: absolute;
+	left: 512px;
+	top: 227px;
+	visibility:hidden;
+}
+
+@webkit-keyframes placeTopPlate_1 {
+	0% {left: 108px; top: 440px;}
+	80% {left: 439px; top: 180px;}
+	100% {left: 439px; top: 220px;}
+}
+
+@keyframes placeTopPlate_1 {
+	0% {left: 108px; top: 440px;}
+	80% {left: 439px; top: 180px;}
+	100% {left: 439px; top: 220px;}
+}
+
+@webkit-keyframes placeTopPlate_2 {
+	0% {left: 439px; top: 220px;}
+	100% {left: 439px; top: 281px;}
+}
+
+@keyframes placeTopPlate_2 {
+	0% {left: 439px; top: 220px;}
+	100% {left: 439px; top: 281px;}
+}
+
+@webkit-keyframes placeTopPlate_left {
+	0% {left: 440px; top: 241px;}
+	100% {left: 440px; top: 301px;}
+}
+
+@keyframes placeTopPlate_left {
+	0% {left: 440px; top: 241px;}
+	100% {left: 440px; top: 301px;}
+}
+
+@webkit-keyframes placeTopPlate_right {
+	0% {left: 509px; top: 253px;}
+	100% {left: 509px; top: 313px;}
+}
+
+@keyframes placeTopPlate_right {
+	0% {left: 509px; top: 253px;}
+	100% {left: 509px; top: 313px;}
+}
+
+@webkit-keyframes placeTopPlate_behind {
+	0% {left: 512px; top: 227px;}
+	100% {left: 512px; top: 288px;}
+}
+
+@keyframes placeTopPlate_behind {
+	0% {left: 512px; top: 227px;}
+	100% {left: 512px; top: 288px;}
+}
+
+.setup6-12{
+    width: 2%;
+	height: 3%;
+    position: absolute;
+    left: 440px;
+	top: 216px;
+	visibility:hidden;
+}
+
+.setup6-13 {
+    width: 20%;
+	position: absolute;
+	left: 444px;
+	top: 204px;
+	visibility:hidden;
+}
+
+@webkit-keyframes placeBolt {
+	0% {left: 440px; top: 216px;}
+	100% {left: 440px; top: 266px;}
+}
+
+@keyframes placeBolt {
+	0% {left: 440px; top: 216px;}
+	100% {left: 440px; top: 266px;}
+}
+
+.setup6-14{
+    width: 2%;
+	height: 3%;
+    position: absolute;
+    left: 440px;
+	top: 288px;
+	visibility:hidden;
+}
+
+.setup6-15{
+    width: 2%;
+	height: 3%;
+    position: absolute;
+	left: 520px;
+	top: 300px;
+	visibility:hidden;
+}
+
+.setup6-16{
+    width: 2%;
+	height: 3%;
+    position: absolute;
+	left: 510px;
+	top: 281px;
+	visibility:hidden;
+}
+
+/* --------------------------------------- CANVAS 7 ---------------------------------------- */
+.setup7-1, .setup8-1{
+	/* width:150px; */
+	/* position: absolute; */
+    /* left: 50px; */
+    /* top: 65px; */
+	width: 130px;
+    position: absolute;
+    left: 50px;
+    top: 60px;
+}
+
+.setup7-2, .setup8-2{
+	/* width: 180px; */
+    /* position: absolute; */
+    /* left: 165px; */
+    /* top: 321px; */
+	width: 180px;
+    position: absolute;
+    left: 110px;
+    top: 337px;
+}
+
+.setup7-3{
+    /* position: absolute; */
+    /* left: 76px; */
+    /* top: 300px; */
+	position: absolute;
+    left: 76px;
+    top: 310px;
+}
+
+.setup7-4{
+	position: absolute;
+	left: 107px;
+    top: 445px;
+    /* top: 332px; */
+    width: 100px;
+	visibility:hidden;
+}
+
+.setup7-5 {
+    height: 20px;
+    position: absolute;
+    left: 180px;
+    top: 483px;
+    width: 29px;
+	cursor:pointer;
+}
+
+.setup7-6{
+	height: 20px;
+    position: absolute;
+    left: 192px;
+    top: 344px;
+    width: 15px;
+	cursor:pointer;
+}
+
+@webkit-keyframes connectPipe {
+	0% {left: 76px; top: 310px;}
+	100% {left: 76px; top: 300px;}
+}
+
+@keyframes connectPipe {
+	0% {left: 76px; top: 310px;}
+	100% {left: 76px; top: 300px;}
+}
+
+@webkit-keyframes moveHand {
+	0% {left: 107px; top: 445px;}
+	100% {left: 107px; top: 432px;}
+}
+
+@keyframes moveHand {
+	0% {left: 107px; top: 445px;}
+	100% {left: 107px; top: 432px;}
+}
+
+/* ---------------------------------------------------- CANVAS 8 -----------------------------------------------  */
+.setup8-1{
+	width: 130px;
+    position: absolute;
+    left: 280px;
+    top: 60px;
+}
+
+.setup8-2 {
+	width: 180px;
+    position: absolute;
+    left: 340px;
+    top: 337px;
+}
+
+.setup8-3{
+    position: absolute;
+    left: 306px;
+    top: 300px;
+}
+
+.setup8-4{
+	height: 8px; 
+	position: absolute; 
+	left: 422px; 
+	top: 344px; 
+	width: 15px; 
+	background-color:#fff;
+	cursor:crosshair;
+}
+
+.setup8-5{
+    position: absolute;
+    left: 327px;
+    top: 290px;
+	cursor:pointer;
+}
+
+.setup8-5b{
+	visibility:hidden;
+}
+
+.setup8-6{
+    position: absolute;
+    left: 336px;
+	top: 62px;
+}
+
+.setup8-7{
+    position: absolute;
+	left: 307px;
+	top: 289px;
+	visibility:hidden;
+}
+
+.setup8-8{
+    position: absolute;
+    left: 420px;
+	top: 350px;
+	visibility:hidden;
+}
+
+.setup8-9{
+    position: absolute;
+    left: 413px;
+	top: 337px;
+	border:2px solid red;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	visibility:hidden;
+}
+
+@webkit-keyframes openValve{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(180deg)}
+}
+
+@keyframes openValve{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(180deg)}
+}
+
+
+
+/* ---------------------------------------------- CANVAS 9 ------------------------------------------ */
+.setup9-1, .setup10-1{
+	width: 130px;
+    position: absolute;
+    left: 280px;
+    top: 46px;
+}
+
+.setup9-2, .setup10-2 {
+  width: 180px;
+  position: absolute;
+  left: 340px;
+  top: 300px;
+}
+
+.setup9-3, .setup10-3{
+    position: absolute;
+    left: 336px;
+	top: 48px;
+}
+
+.setup9-4, .setup10-4{
+    position: absolute;
+    left: 331px;
+	top: 289px;
+}
+
+.setup9-4b{
+	visibility:hidden;
+}
+
+.setup9-5{
+    position: absolute;
+    left: 327px;
+    top: 279px;
+	cursor:pointer;
+}
+
+.setup9-6 {
+  width: 211px;
+  position: absolute;
+  left: 10px;
+  top: 100px;
+  visibility:hidden;
+}
+
+/* ------------------------------------------- CANVAS 10 -------------------------------------------- */
+.setup10-5 {
+  position: absolute;
+  left: 421px;
+  top: 485px;
+  width: 30px;
+}
+
+.drop10
+{
+	position:absolute; 
+	left: 433px;
+	top: 451px;
+	width:9px; 
+	height:9px; 
+	border-radius:50%; 
+	border-top-right-radius:0; 
+	transform:rotate(-45deg);  
+	background-color: #8FD5FF;
+}
+
+.setup10-6
+{
+	position:absolute; 
+	left: 424px;
+	top: 518px;
+	width: 27px;
+	height: 24.5px;
+	background-color: #8FD5FF;	
+}
+
+.setup10-7 {
+  position: absolute;
+  left: 521px;
+  top: 100px;
+  width: 114px;
+}
+
+.setup10-8 {
+  position: absolute;
+  left: 574px;
+  top: 117px;
+  width: 8px;
+}
+
+.table10{
+	text-align:center;
+	position:absolute;
+	left:0;
+	top:100px;
+	width:250px;
+	border:1px solid black;
+	font-size:14px;	
+}
+
+th,td{
+	border:1px solid black; 
+	padding:5px;
+}
+
+@-webkit-keyframes drops {
+  0% {
+    transform: scale3d(0.01,0.01,0.01) translateY(0) rotate(-45deg);
+  }
+  10% {
+    transform: scale3d(1,1,1) rotate(-45deg); 
+  }
+  44% {
+    transform: scale3d(1,1,1) translateY(65px) rotate(-45deg);
+  }
+  100% {
+    transform: scale3d(1,1,1) translateY(65px) rotate(-45deg);
+  }
+}
+@keyframes drops {
+   0% {
+    transform: scale3d(0.01,0.01,0.01) translateY(0) rotate(-45deg);
+  }
+  10% {
+    transform: scale3d(1,1,1) rotate(-45deg); 
+  }
+  44% {
+    transform: scale3d(1,1,1) translateY(65px) rotate(-45deg);
+  }
+  100% {
+    transform: scale3d(1,1,1) translateY(65px) rotate(-45deg);
+  }
+}
+
+@webkit-keyframes fillWater {
+	0% {left: 424px; top: 518px;}
+	100% {left: 424px; top: 492px;}
+}
+
+@keyframes fillWater {
+	0% {left: 424px; top: 518px;}
+	100% {left: 424px; top: 492px;}
+}
+
+
+@webkit-keyframes rotateNeedle{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg)}
+}
+
+@keyframes rotateNeedle{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg)}
+}
+
+/* ------------------------------------------------ CANVAS 11 -----------------------------------------*/
+.table11-1{
+	position:absolute;
+	left:10px;
+	top:35px;
+	font-size:12px;
+	border:1px solid #000;
+	text-align:center;
+}
+
+/* .const{ */
+	/* position:absolute; */
+	/* left: 10px; */
+	/* top: 195px; */
+	/* font-size:12px; */
+/* } */
+
+.calculation{
+	position:absolute;
+	left:10px;
+	top:200px;
+}
+
+.table11-2{
+	font-size:12px;
+	line-height:2;
+	padding:0;
+}
+
+.calculation h3{
+	margin-bottom:10px;
+}
+
+.table11-2 td{
+	font-size:12px;
+	border:none;
+}
+
+.coefficient-tab{
+	visibility:hidden;
+}
+
+.inference{
+	position:absolute; 
+	left: 10px;
+	top: 400px; 
+	visibility:hidden;
+}
+
+.inference h3{
+	margin-bottom:10px;
+}
+
+.inference p{
+	margin-left:2px;
+	font-size: 12px;
+	line-height: 1.5;
+	width: 600px;
+	text-align: justify;
+}
+
+/* ----------------------------------------------GENERAL STYLES  ---------------------------------------------*/
+.note{
+	background-color:#000;
+	color:#fff;
+	font-size:14px;
+	padding:20px;
+	visibility:hidden;
+	border-radius:3px;
+	box-shadow:0 10px 12px ragba(0,0,0,0.1);
+}
+
+.note-text{
+	line-height:1.5;
+	margin-bottom:5px;
+	text-align:justify;
+}
+
+.note-btn{
+	padding:5px;
+	text-transform:uppercase;
+	cursor:pointer;
+	float:right;
+}
+
+/* ---------------------------------------------------------------- */
+
+.variables{
+	line-height:2;
+	font-size:14px;
+	position: absolute;
+	left: 430px;
+	top: 83px;
+}
+
+.variables-description{
+	/* Position the tooltip */
+	position: absolute;
+	left:10px;
+	visibility:hidden;
+	width: 300px;
+	background-color: black;
+	color: #fff;
+	border-radius: 6px;
+	padding: 10px 10px 10px 10px;
+	z-index: 100;
+}
+
+
+.variables:hover .variables-description {
+	visibility: visible;
+}

@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The property of soil  which allows water to percolate through its voids is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Moisture content",
+        "b": "Capillarity",
+        "c": "Void ratio",
+        "d": "Permeability"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The amount of water that is present in soil is the moisture content of soil.",
+        "b": "Capillary is the phenomenon where liquid rises or falls through the pores present in the soil.",
+        "c": "Void ratio is the ratio of volume of voids to volume of solids.",
+        "d": "Permeability is the property of soil where water is allowed to percolate through the voids present in it."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "__________ is equal to the rate of flow of water through unit cross sectional area under unit hydraulic gradient.",
+      "answers": {
+        "a": "Coefficient of permeability",
+        "b": "Coefficient of viscosity",
+        "c": "Transmissivity",
+        "d": "Porosity"
+      },
+      "explanations": {
+        "a": "Permeability is the flow of water through the pores present in the soil. Coefficient of permeability is the rate at which water flows through  unit cross sectional area under hydraulic gradient.",
+        "b": "Viscosity is the resistance offered to the flow of liquid. Coefficient of viscosity is the measure of resistance of fluid to deformation at a given rate of internal friction.",
+        "c": "Transmissivity is the rate at which groundwater is transmitted through a unit width of aquifer  under a unit hydraulic gradient.",
+        "d": "Porosity is the void space present in the soil.  It is the ratio of volume of void space to the total volume."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The type of soil used for constant head permeability test is ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Fine grained soil",
+        "b": "Cohesive soil",
+        "c": "Coarse grained soil",
+        "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Fine grained soil is not used for constant head permeability, because the constant head has to be maintained and discharge  through fine soil is very small.",
+        "b": "Cohesive soil has relatively lesser void space due to which is not suitable for constant head permeability tests.",
+        "c": "Constant head test is suitable for coarse grained soil which is more pervious because of larger void space.Hence the quantity of discharge of liquid through coarse grained soil  will be more.",
+        "d": "The correct answer is mentioned in the above option."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In constant head permeability test, the length of specimen is calculated by",
+      "answers": {
+        "a": "Calculating the difference in water level",
+        "b": "Using piezometric tube",
+        "c": "Using measuring scale",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "The length of the specimen can not be measured  by calculating the difference in water level.",
+        "b": "The length of the specimen is measured by inserting a piezometer.",
+        "c": "Measuring scale is not used for the measurement of length of the specimen.",
+        "d": "Correct answer is provided in the above option."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following tubes are used for constant head test?",
+      "answers": {
+        "a": "Inlet tube",
+        "b": "Overflow tube",
+        "c": "Outlet tube",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "Through inlet tube water enters the sample specimen.",
+        "b": "Overflow tube is used to remove the surplus water.",
+        "c": "Through the outlet tube, the water passing through the soil sample is collected and a constant head is maintained.",
+        "d": "All the options provided above are used for constant head tests."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
     }
   ]
 }
